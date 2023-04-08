@@ -140,8 +140,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
 
   &__summary-container,
   &__overview-container {
-    max-width: 400px;
-    min-width: 300px;
+    width: 300px;
     flex: 1;
   }
 
@@ -202,6 +201,13 @@ $dark-gray-blue: hsl(224, 30%, 27%);
   .result {
     &__content {
       flex-direction: row;
+    }
+
+    &__summary-container,
+    &__overview-container {
+      max-width: 400px;
+      min-width: 300px;
+      flex: 1;
     }
   }
 }
