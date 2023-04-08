@@ -1,28 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="result__container">
+    <div class="result__content">
+      <div class="result__overview-container">
+        <p class="result__your-result-label">You result</p>
+        <div class="result__score-container">
+          <div class="result__global-score">76</div>
+          <div class="result__of-hundred">of 100</div>
+        </div>
+        <p class="result__comment">Great</p>
+        <p class="result__description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="result__summary-container">
+        <h3 class="result__summary-label">Summary</h3>
+        <button class="result__continue-button">Continue</button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+* {
+  padding: 0;
+  margin: 0;
+}
+.result {
+  &__container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 </style>
