@@ -16,6 +16,7 @@ export default {
          <img
             class="score__image"
             :src="score.icon"
+            alt="Icon"
          />
          <div class="score__category">{{ score.category }}</div>
       </div>
