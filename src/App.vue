@@ -127,6 +127,12 @@ $dark-gray-blue: hsl(224, 30%, 27%);
     width: 100%;
     margin-top: 10px;
     font-size: 1em;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient($light-slate-blue, $light-royal-blue);
+    }
   }
 
   &__summary-label {
@@ -140,7 +146,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
 
   &__summary-container,
   &__overview-container {
-    width: 300px;
+    width: 325px;
     flex: 1;
   }
 
@@ -150,7 +156,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
     background: linear-gradient($light-slate-blue, $light-royal-blue);
     color: $pale-blue;
 
-    padding: 40px;
+    padding: 50px;
     border-radius: 30px;
   }
 
@@ -165,8 +171,8 @@ $dark-gray-blue: hsl(224, 30%, 27%);
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
     
     background: linear-gradient($violet-blue, $persian-blue);
@@ -178,7 +184,8 @@ $dark-gray-blue: hsl(224, 30%, 27%);
   }
 
   &__of-hundred,
-  &__description {
+  &__description,
+  &__your-result-label {
     color: $light-lavender;
   }
 
@@ -201,13 +208,6 @@ $dark-gray-blue: hsl(224, 30%, 27%);
   .result {
     &__content {
       flex-direction: row;
-    }
-
-    &__summary-container,
-    &__overview-container {
-      max-width: 400px;
-      min-width: 300px;
-      flex: 1;
     }
   }
 }
