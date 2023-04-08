@@ -46,7 +46,7 @@ export default {
   <div id="app" class="result__container">
     <div class="result__content">
       <div class="result__overview-container">
-        <p class="result__your-result-label">You Result</p>
+        <p class="result__your-result-label">Your Result</p>
         <div class="result__score-container">
           <div class="result__score-circle">
             <div class="result__global-score">76</div>
@@ -114,7 +114,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
   }
 
   &__score {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   &__continue-button {
@@ -132,24 +132,22 @@ $dark-gray-blue: hsl(224, 30%, 27%);
   }
 
   &__summary-container {
-    padding: 20px;
+    padding: 30px;
   }
 
   &__summary-container,
   &__overview-container {
-    max-width: 300px;
+    max-width: 400px;
+    flex: 1;
   }
 
   &__overview-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     text-align: center;
 
     background: linear-gradient($light-slate-blue, $light-royal-blue);
     color: $pale-blue;
 
-    padding: 20px;
+    padding: 40px;
     border-radius: 30px;
   }
 
@@ -184,6 +182,15 @@ $dark-gray-blue: hsl(224, 30%, 27%);
   &__comment {
     font-weight: 600;
     font-size: 1.25em;
+  }
+
+  &__your-result-label,
+  &__score-container{
+    margin-bottom: 20px;
+  }
+
+  &__comment {
+    margin-bottom: 15px;
   }
 }
 
