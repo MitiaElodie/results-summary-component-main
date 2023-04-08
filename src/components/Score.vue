@@ -46,6 +46,7 @@ export default {
 
    &__category {
       color: var(--color);
+      font-weight: 700;
    }
 
    &__value {
