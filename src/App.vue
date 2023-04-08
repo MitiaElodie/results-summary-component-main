@@ -1,3 +1,39 @@
+<script>
+import Score from '@/components/Score.vue'
+export default {
+  name: 'App',
+
+  components: { Score },
+
+  data() {
+    return {
+      scoreList: [
+        {
+          category: "Reaction",
+          value: 80,
+          icon: "@/assets/images/icon-reaction.svg"
+        },
+        {
+          "category": "Memory",
+          value: 92,
+          icon: "@/assets/images/icon-memory.svg"
+        },
+        {
+          "category": "Verbal",
+          value: 61,
+          icon: "@/assets/images/icon-verbal.svg"
+        },
+        {
+          "category": "Visual",
+          value: 72,
+          icon: "@/assets/images/icon-visual.svg"
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <template>
   <div id="app" class="result__container">
     <div class="result__content">
@@ -14,17 +50,19 @@
       </div>
       <div class="result__summary-container">
         <h3 class="result__summary-label">Summary</h3>
+        <div class="result__score-list">
+          <Score
+            v-for="(score, index) in scoreList"
+            :key="index"
+            class="result__score"
+            :score="score"
+          />
+        </div>
         <button class="result__continue-button">Continue</button>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'App',
-}
-</script>
 
 <style lang="scss">
 * {
