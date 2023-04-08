@@ -101,6 +101,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
   }
 
   &__content {
@@ -112,11 +113,11 @@ $dark-gray-blue: hsl(224, 30%, 27%);
   }
 
   &__summary-label {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   &__score {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   &__continue-button {
@@ -125,7 +126,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
     padding: 15px;
     border-radius: 30px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 1em;
     border: none;
     cursor: pointer;
@@ -146,7 +147,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
 
   &__summary-container,
   &__overview-container {
-    width: 325px;
+    width: 350px;
     flex: 1;
   }
 

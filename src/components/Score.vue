@@ -57,6 +57,7 @@ export default {
    &__of-hundred {
       color: #91999b;
       font-weight: 600;
+      opacity: 0.6;
    }
 }
 </style>
