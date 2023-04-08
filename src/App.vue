@@ -107,6 +107,8 @@ $dark-gray-blue: hsl(224, 30%, 27%);
     display: flex;
     flex-direction: column;
     margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 2em $pale-blue;
   }
 
   &__summary-label {
@@ -139,6 +141,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
   &__summary-container,
   &__overview-container {
     max-width: 400px;
+    min-width: 300px;
     flex: 1;
   }
 
