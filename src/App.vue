@@ -156,7 +156,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
     background: linear-gradient($light-slate-blue, $light-royal-blue);
     color: $pale-blue;
 
-    padding: 50px;
+    padding: 40px;
     border-radius: 30px;
   }
 
@@ -201,6 +201,10 @@ $dark-gray-blue: hsl(224, 30%, 27%);
 
   &__comment {
     margin-bottom: 15px;
+  }
+
+  &__description {
+    padding: 0 10px;
   }
 }
 
