@@ -11,22 +11,30 @@ export default {
         {
           category: "Reaction",
           value: 80,
-          icon: "@/assets/images/icon-reaction.svg"
+          icon: "../assets/images/icon-reaction.svg",
+          backgroundColor: 'hsla(0, 100%, 67%, 0.1)',
+          color: 'hsl(0, 100%, 67%)',
         },
         {
           "category": "Memory",
           value: 92,
-          icon: "@/assets/images/icon-memory.svg"
+          icon: "../assets/images/icon-memory.svg",
+          backgroundColor: 'hsla(39, 100%, 56%, 0.1)',
+          color: 'hsl(39, 100%, 56%)',
         },
         {
           "category": "Verbal",
           value: 61,
-          icon: "@/assets/images/icon-verbal.svg"
+          icon: "../assets/images/icon-verbal.svg",
+          backgroundColor: 'hsla(166, 100%, 37%, 0.1)',
+          color: 'hsl(166, 100%, 37%)',
         },
         {
           "category": "Visual",
           value: 72,
-          icon: "@/assets/images/icon-visual.svg"
+          icon: "../assets/images/icon-visual.svg",
+          backgroundColor: 'hsla(234, 85%, 45%, 0.1)',
+          color: 'hsl(234, 85%, 45%)',
         }
       ]
     }
