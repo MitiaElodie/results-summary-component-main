@@ -46,10 +46,12 @@ export default {
   <div id="app" class="result__container">
     <div class="result__content">
       <div class="result__overview-container">
-        <p class="result__your-result-label">You result</p>
+        <p class="result__your-result-label">You Result</p>
         <div class="result__score-container">
-          <div class="result__global-score">76</div>
-          <div class="result__of-hundred">of 100</div>
+          <div class="result__score-circle">
+            <div class="result__global-score">76</div>
+            <div class="result__of-hundred">of 100</div>
+          </div>
         </div>
         <p class="result__comment">Great</p>
         <p class="result__description">
@@ -77,18 +79,19 @@ $light-red: hsl(0, 100%, 67%);
 $orange-yellow: hsl(39, 100%, 56%);
 $Green-teal: hsl(166, 100%, 37%);
 $Cobalt-blue: hsl(234, 85%, 45%);
-$Light-slate-blue: hsl(252, 100%, 67%);
-$Light-royal-blue: hsl(241, 81%, 54%);
-$Violet-blue: hsla(256, 72%, 46%, 1);
-$Persian-blue: hsla(241, 72%, 46%, 0);
+$light-slate-blue: hsl(252, 100%, 67%);
+$light-royal-blue: hsl(241, 81%, 54%);
+$violet-blue: hsla(256, 72%, 46%, 1);
+$persian-blue: hsla(241, 72%, 46%, 0);
 $white: hsl(0, 0%, 100%);
-$Pale-blue: hsl(221, 100%, 96%);
-$Light-lavender: hsl(241, 100%, 89%);
+$pale-blue: hsl(221, 100%, 96%);
+$light-lavender: hsl(241, 100%, 89%);
 $dark-gray-blue: hsl(224, 30%, 27%);
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: 'Hanken Grotesk', sans-serif;
 }
 .result {
@@ -98,6 +101,12 @@ $dark-gray-blue: hsl(224, 30%, 27%);
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
   }
 
   &__summary-label {
@@ -123,7 +132,66 @@ $dark-gray-blue: hsl(224, 30%, 27%);
   }
 
   &__summary-container {
+    padding: 20px;
+  }
+
+  &__summary-container,
+  &__overview-container {
     max-width: 300px;
+  }
+
+  &__overview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+
+    background: linear-gradient($light-slate-blue, $light-royal-blue);
+    color: $pale-blue;
+
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  &__score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__score-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    
+    background: linear-gradient($violet-blue, $persian-blue);
+  }
+
+  &__global-score {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  &__of-hundred,
+  &__description {
+    color: $light-lavender;
+  }
+
+  &__comment {
+    font-weight: 600;
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .result {
+    &__content {
+      flex-direction: row;
+    }
   }
 }
 </style>
