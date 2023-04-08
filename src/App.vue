@@ -73,9 +73,23 @@ export default {
 </template>
 
 <style lang="scss">
+$light-red: hsl(0, 100%, 67%);
+$orange-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
+$Light-slate-blue: hsl(252, 100%, 67%);
+$Light-royal-blue: hsl(241, 81%, 54%);
+$Violet-blue: hsla(256, 72%, 46%, 1);
+$Persian-blue: hsla(241, 72%, 46%, 0);
+$white: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 .result {
   &__container {
@@ -84,6 +98,32 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__summary-label {
+    margin-bottom: 20px;
+  }
+
+  &__score {
+    margin-bottom: 15px;
+  }
+
+  &__continue-button {
+    background-color: $dark-gray-blue;
+    color: $white;
+    padding: 15px;
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1em;
+  }
+
+  &__summary-label {
+    color: $dark-gray-blue;
+  }
+
+  &__summary-container {
+    max-width: 300px;
   }
 }
 </style>

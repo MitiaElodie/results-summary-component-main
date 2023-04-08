@@ -52,5 +52,9 @@ export default {
       color: hsl(224, 30%, 27%);
       font-weight: 700;
    }
+
+   &__of-hundred {
+      color: #979098;
+   }
 }
 </style>
